@@ -2,10 +2,10 @@
 source to source compiler for Fictional C language aka FC to C
 
 # Dependencies
-First install bison and flex tool
+First install Bison and Flex tools which are available to most unix systems
 
 
-In ubuntu open a terminal and run
+For example in Ubuntu OS open a terminal and run
 
 sudo apt-get install update
 
@@ -24,3 +24,11 @@ to run the tests of the compiler open a terminal and run the following commands
 
 # Compile an FC source file to C
 fcc < source_file.fc > destination_file.c
+
+# Keywords of FC
+static boolean integer character real
+true false string void while
+do break continue return begin
+if else for end or
+not and mod
+
