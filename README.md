@@ -42,7 +42,7 @@ not and mod
 # Logic and Arithmetic operations
 * ! not
 * + -  (sign)
-* '*' / mod  
+*  / mod  
 * + -  
 * = !=
 * < > <= >= 
