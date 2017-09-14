@@ -39,15 +39,6 @@ not and mod
 * real
 * string
 
-# Logic and Arithmetic operations
-* ! not
-* + -  (sign)
-*  / mod  
-* + -  
-* = !=
-* < > <= >= 
-* && 
-* || 
 
 # Standar Library of FC -  fclib
 Build in functions for stadar library of fc  something like stdlib for C
