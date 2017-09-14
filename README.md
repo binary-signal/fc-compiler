@@ -22,5 +22,5 @@ to run the tests of the compiler open a terminal and run the following commands
 
 ./run_fcc
 
-#Compiling
-fcc < source_file.fc >
+# Compile an FC source file to C
+fcc < source_file.fc > destination_file.c
