@@ -37,5 +37,23 @@ not and mod
 * boolean 
 * character
 * real
-* string 
+* string
 
+# Logic and Arithmetic operations
+* ! not
+* + -  (sign)
+* * / mod  
+* + -  
+* = !=
+* < > <= >= 
+* && 
+* || 
+
+# Standar Library of FC -  fclib
+Build in functions for stadar library of fc  something like stdlib for C
+* string readString() 
+* void writeString(string s)
+* integer readInteger() 
+* void writeInteger(integer i)
+* real readReal() 
+* void writeReal(real r)
