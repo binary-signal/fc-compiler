@@ -31,4 +31,10 @@ true false string void while
 do break continue return begin
 if else for end or
 not and mod
+# Basic Data type of FC
+● integer
+● boolean 
+● character
+● real
+● string 
 
