@@ -1,0 +1,57 @@
+#!/bin/bash
+
+clear
+echo https://efxa.org/2014/05/17/techniques-for-resolving-common-grammar-conflicts-in-parsers/
+echo cleaning...
+make clean
+
+echo
+echo Execute Makefile
+echo -------------------------------------------------------------------------------
+if [ ! -f .depend ]; then
+  touch .depend
+  make depend
+fi
+make
+echo --------------------------------------------------------------------------------
+
+echo                      working examples
+echo 1 working
+echo -------------
+./fcc < good_hello_world.fc >  good_hello_world.c
+gcc -g -Wall -o good_hello_world good_hello_world.c
+./good_hello_world
+
+echo
+echo 2 working
+echo -------------
+./fcc < good_add2numbers.fc >  good_add2numbers.c
+gcc -g -Wall -o good_add2numbers good_add2numbers.c
+./good_add2numbers
+
+echo
+echo 3 working
+echo -------------
+./fcc < good_prime_number.fc >  good_prime_number.c
+gcc -g -Wall -o good_prime_number good_prime_number.c
+./good_prime_number
+
+echo
+echo
+read -p "Press enter to continue"
+
+echo                    non  working examples
+echo 1 non working
+echo -------------
+./fcc < bad_missing_paren.fc #>  bad_missing_paren.c
+
+echo
+echo 2 non working
+echo -------------
+./fcc < bad_missing_semi.fc #>  bad_missing_semi.c
+
+
+echo  
+echo 3 non working
+echo -------------
+./fcc < bad_nofucntion.fc #>  bad_nofucntion.c

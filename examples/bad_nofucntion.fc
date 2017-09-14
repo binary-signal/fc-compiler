@@ -1,0 +1,4 @@
+//no function
+integer a, b, c;
+static integer:=5;
+boolean x, y:=false, z;
